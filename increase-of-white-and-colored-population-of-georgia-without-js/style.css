@@ -1,0 +1,63 @@
+/* styles go here */
+@font-face {
+  font-family: Earth;
+  src: url(Earth2073.ttf);
+}
+
+.page {
+  background-color: rgb(250, 239, 233);
+  width: 814px;
+  height: 1024px;
+}
+
+h1,
+.extGrid {
+  font-family: "Earth", sans-serif;
+  color: rgb(40, 40, 40);
+  stroke: rgb(40, 40, 40);
+  stroke-width: 0.75px;
+}
+
+.intGrid {
+  stroke: rgb(275, 120, 120);
+  stroke-width: 0.75px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 10;
+}
+text {
+  font-weight: 10;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.years {
+  font-weight: 10;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.dashedLine,
+.regularLine {
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.dashedLine {
+  stroke-dasharray: 10px;
+}
+
+.headerContainer {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
