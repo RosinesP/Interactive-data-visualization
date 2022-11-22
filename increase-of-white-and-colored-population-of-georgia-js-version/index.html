@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Graphic of the comparison in terms of increase of population between white
+      and racialized population in Georgia
+    </title>
+
+    <!-- keep your styling in a separate file -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page">
+      <!--WHOLE PAGE-->
+      <div class="headerContainer">
+        <h1>
+          COMPARATIVE INCREASE OF WHITE AND COLORED POPULATION OF GEORGIA.
+        </h1>
+      </div>
+      <!-- use divs to help structure and style the 'front matter' and 'back matter' -->
+      <!-- or non-graphical elements of your visualization -->
+      <div class="graph">
+        <svg id="chart" xmlns="http://www.w3.org/2000/svg" width="800" height="1000">         
+          
+          <!--Internal grid. Vertical-->
+          <g class="intGrid">
+            <path d="M 212 0 V 730 M 236 0 V 730 M 260 0 V 730 M 
+                    284 0 V 730 M 308 0 V 730 M 332 0 V 730 M 356 0 V 730 M 380 0 V 730 M 404 0 V 730 M 
+                    428 0 V 730 M 452 0 V 730 M 476 0 V 730 M 500 0 V 730 M 524 0 V 730 M 548 0 V 730 M
+                    572 0 V 730 M 596 0 V 730 M 620 0 V 730 M 644 0 V 730 ">
+          </g>
+
+          <!--Internal grid. Horizontal-->
+          <g class="intGrid">
+            <path d=" M 188 73 H 668 M 188 146  H 668 M 188 219 H 668 M 188 292 H 668 M 188 365 H 668
+                      M 188 438 H 668 M 188 511 H 668 M 188 584 H 668 M 188 657 H 668">
+          </g>
+
+
+          <g>
+            <text class="years" x="135" y="0" dominant-baseline="hanging"> 1890</text>
+            <text class="years" x="135" y="66" dominant-baseline="hanging"> 1880</text>
+            <text class="years" x="135" y="139" dominant-baseline="hanging"> 1870</text>
+            <text class="years" x="135" y="212" dominant-baseline="hanging"> 1860</text>
+            <text class="years" x="135" y="285" dominant-baseline="hanging"> 1850</text>
+            <text class="years" x="135" y="358" dominant-baseline="hanging"> 1840</text>
+            <text class="years" x="135" y="431" dominant-baseline="hanging"> 1830</text>
+            <text class="years" x="135" y="504" dominant-baseline="hanging"> 1820</text>
+            <text class="years" x="135" y="577" dominant-baseline="hanging"> 1810</text>
+            <text class="years" x="135" y="650" dominant-baseline="hanging"> 1800</text>
+            <text class="years" x="135" y="723" dominant-baseline="hanging"> 1790</text>
+        
+          </g>
+          
+          <g>
+            <text class = "label" x="235" y="805" dominant-baseline="hanging"> = COLORED </text>
+            <path class = "regularLine" d="M 175 810 H 230">
+          </g>
+
+          <g>
+              <text class = "label" x="550" y="805" dominant-baseline="hanging">WHITE =</text>
+              <path class = "dashedLine" d="M 605 810 H 675">
+            </g>
+
+
+          
+
+
+
+          <!--External grid-->
+          <g fill="transparent" stroke="black">
+            <path d="M 175 740 Q 175 755 200 753 M 200 753 H 377 M 377 753 Q 402 753 405 790 M 405 790
+                     Q 405 753 430 753 M 430 753 H 665 M 665 753 Q 680 753 680 740">
+          </g>
+
+
+          <g class="extGrid">
+              <path d="M 188 0 H 668 M 188 0 V 730 M 188 730 H 668 M 668 0 V 730" />
+          </g>
+
+        </svg>
+        </svg>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
